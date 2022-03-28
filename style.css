@@ -1,0 +1,171 @@
+.temp{
+    margin-top: 13px;
+    padding: 11px 8px 10px 8px;
+    background-color: #88E0424D;
+    width: fit-content;
+    border-bottom: 1px solid rgba(157, 229, 99, 1);
+}
+#temp{
+    font-size: 32px;
+}
+#temp::after, #feelLike::after{
+    content: "\2103";
+}
+#pressure::after{
+    content: " mmHg";
+}
+.temp-block{
+    display: flex;
+}
+#status-img{
+    transform: translateY(25%);
+    margin-left: 5px;
+}
+section{
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+}
+.main-block{
+    padding: 25px 0 60px 27px;
+    width: 40rem;
+}
+.description-block{
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 12px;
+}
+#description-text{
+    z-index: 1;
+    padding-right: 5px;
+    background-color: white;
+    color: #777777;
+}
+.cityBlock{
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #0099FF;
+} 
+#date{
+    font-size: 14px;
+}
+.current-weather-block{
+    padding-right: 7px;
+    border-right: solid grey;
+}
+.weatherBorder::before{
+    border-bottom: 1px solid hsla(0,0%,47%,.4);
+    bottom: 9px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+#pressure, #feelLike, #humidity, #wind{
+    background-color: white;
+    z-index: 1;
+    padding-left: 3px;
+    font-size: 16px;
+}
+body sup{
+    font-size: 10px;
+    padding-left: 1px;
+}
+.weatherDescriptionBlock{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+}
+.current-location{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.current-location:hover {
+    color: #1e2125;
+    background-color: #e9ecef;
+}
+.align{
+    text-align: center;
+}
+#image1, #image2, #image2, #image3, #image4, #image5{
+    margin-top: 15px;
+}
+.background-for-temp{
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+}
+.hourly-temp-block{
+    display: flex;
+    justify-content: space-between;
+    margin-right: -17px;
+}
+#hourlyTemp1, #hourlyTemp2, #hourlyTemp3, #hourlyTemp4, #hourlyTemp5{
+    font-size: 20px;
+}
+.row>*{
+    padding-left: 0;
+    padding-right: 0;
+}
+.main-subBlock-1{
+    padding-left: 13px;
+}
+.windSpeed::before{
+    border-bottom: 1px solid hsla(0,0%,47%,.4);
+    bottom: 7px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+.windSpeed{
+    position: relative;
+    margin-top: 25px;
+}
+#windSpeedHeader{
+    font-size: 17px;
+    padding-left: 13px;
+    padding-right: 8px;
+    background-color: white;
+    z-index: 1;
+}
+.windSpeedBox{
+    padding: 4px 25px;
+    font-weight: 700;
+    font-size: 17px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 235, 170, 1) 30%);
+    transform: skew(-12deg);
+}
+.wind-speed-block{
+    margin-top: 10px;
+    margin-left: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    line-height: 1;
+    padding: 0 0 0 .75rem;
+    font-size: 14px;
+    font-size: 17px;
+}
+.btn-group, .btn-group-vertical {
+    margin: -5px 0 7px 0;
+}
+.btn-primary {
+    color: #0099FF;
+    background-color: white;
+    border-color: white;
+}
